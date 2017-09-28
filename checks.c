@@ -842,10 +842,6 @@ static void CheckPolicy(X509 *x509, CertType type, X509_NAME *subject)
 					{
 						SetError(ERR_INVALID_POLICY_QUALIFIER_ID);
 					}
-					if (nid != NID_id_qt_cps)
-					{
-						SetWarning(WARN_POLICY_QUALIFIER_NOT_CPS);
-					}
 				}
 			}
 		}
